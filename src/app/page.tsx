@@ -1,4 +1,6 @@
 
+"use client";
+
 import { Github, Mail, Briefcase, GraduationCap, Lightbulb, Wrench, Linkedin, Instagram } from "lucide-react";
 import type { ResumeData } from "@/lib/types";
 import { Button } from "@/components/ui/button";
@@ -6,6 +8,7 @@ import { Section } from "@/components/section";
 import { Timeline } from "@/components/timeline";
 import { ProjectShowcase } from "@/components/project-showcase";
 import { Badge } from "@/components/ui/badge";
+import { useEffect, useState } from "react";
 
 const portfolioData: ResumeData = {
   experience: [
@@ -21,9 +24,9 @@ const portfolioData: ResumeData = {
       ],
     },
     {
-      title: "Software Engineer 2 & 1",
+      title: "Software Engineer 2",
       company: "Scaler by InterviewBit",
-      dates: "Dec 2021 - Aug 2024",
+      dates: "Jan 2023 - Aug 2024",
       description: [
         "Built the foundations for a server-driven UI architecture for a fast and flexible app.",
         "Built CI/CD pipeline for the Android app using Jenkins, Docker, Danger, Fastlane and Supply",
@@ -33,15 +36,37 @@ const portfolioData: ResumeData = {
       ],
     },
     {
-      title: "Software Engineer 1 & Intern",
+        title: "Software Engineer 1",
+        company: "Scaler by InterviewBit",
+        dates: "Dec 2021 - Dec 2022",
+        description: [
+            "Built the foundations for a server-driven UI architecture for a fast and flexible app.",
+            "Built CI/CD pipeline for the Android app using Jenkins, Docker, Danger, Fastlane and Supply",
+            "Built a video experience of Scaler topics in a mobile app with features like playback speed, video quality, autoplay, offline downloads and reactive modules and lessons",
+            "Added Jetpack compose support, along with Server-Driven UI support and interoperability with old SDUI components",
+            "Integrated third-party services like AppsFlyer, WebEngage, mixpanel, FB ad deeplinks SDK, Freshchat",
+        ]
+    },
+    {
+      title: "Software Engineer 1",
       company: "Practo",
-      dates: "Feb 2021 - Nov 2021",
+      dates: "Aug 2021 - Nov 2021",
       description: [
         "Worked on the patient side app along with the API aggregator.",
         "Built product features and fixed a few critical bugs.",
         "Was an integral part of the Practo Care - surgeries launch.",
       ],
     },
+    {
+        title: "Intern",
+        company: "Practo",
+        dates: "Feb 2021 - Jul 2021",
+        description: [
+            "Worked on the patient side app along with the API aggregator.",
+            "Built product features and fixed a few critical bugs.",
+            "Was an integral part of the Practo Care - surgeries launch.",
+        ]
+    }
   ],
   education: [
     {
@@ -52,14 +77,14 @@ const portfolioData: ResumeData = {
     },
   ],
   skills: [
-    "Kotlin",
-    "Java",
-    "C++",
-    "Android",
-    "Jetpack Compose",
-    "Android Studio",
-    "Git",
-    "Jenkins",
+    "Kotlin", 
+    "Java", 
+    "C++", 
+    "Android", 
+    "Jetpack Compose", 
+    "Android Studio", 
+    "Git", 
+    "Jenkins"
   ],
   projects: [
     {
@@ -82,9 +107,13 @@ const portfolioData: ResumeData = {
 
 
 export default function Home() {
+  const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const Hero = () => (
-    <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center">
+    <section className={`container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center transition-all duration-1000 ease-out ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-headline tracking-tight text-primary-foreground">
         Darsh Reddy
       </h1>
