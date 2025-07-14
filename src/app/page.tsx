@@ -97,7 +97,7 @@ const portfolioData: ResumeData = {
       name: "Artium",
       description: "An innovative music learning platform that provides live, one-on-one online classes with globally recognized celebrity instructors.",
       link: "https://play.google.com/store/apps/details?id=com.artiumacademy.mobile.app&hl=en_IN",
-      imageUrl: "https://i.ytimg.com/vi/fkLSPoILfVo/hq720.jpg",
+      imageUrl: "https://i.ytimg.com/vi/fkLSPoILfVo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCcZ-mRxxbRBr4OWwn4wrz6dKuRTQ",
     },
     {
       name: "Scaler",

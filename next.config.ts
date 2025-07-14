@@ -28,6 +28,10 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'files.scaler.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'assets-v2.scaler.com',
+      },
     ],
   },
 };
