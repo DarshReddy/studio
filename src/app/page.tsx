@@ -1,4 +1,4 @@
-import { Github, Mail, Briefcase, GraduationCap, Lightbulb, Wrench } from "lucide-react";
+import { Github, Mail, Briefcase, GraduationCap, Lightbulb, Wrench, Linkedin, Instagram } from "lucide-react";
 import type { ResumeData } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/section";
@@ -95,10 +95,37 @@ export default function Home() {
           <a href="#projects">View My Work</a>
         </Button>
         <Button asChild size="lg" variant="secondary">
-          <a href="mailto:darshreddy14@gmail.com">Get in Touch</a>
+          <a href="#contact">Get in Touch</a>
         </Button>
       </div>
     </section>
+  );
+
+  const SocialLinks = () => (
+    <Section title="Contact" icon={Mail} id="contact">
+      <div className="flex justify-center gap-4">
+        <Button asChild variant="outline" size="icon">
+          <a href="mailto:darshreddy14@gmail.com" aria-label="Email">
+            <Mail />
+          </a>
+        </Button>
+        <Button asChild variant="outline" size="icon">
+          <a href="https://www.github.com/darshreddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <Github />
+          </a>
+        </Button>
+        <Button asChild variant="outline" size="icon">
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <Linkedin />
+          </a>
+        </Button>
+        <Button asChild variant="outline" size="icon">
+          <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <Instagram />
+          </a>
+        </Button>
+      </div>
+    </Section>
   );
 
   const PortfolioScreen = ({ data }: { data: ResumeData }) => (
@@ -135,6 +162,7 @@ export default function Home() {
       <main className="flex-grow flex flex-col">
         <Hero />
         <PortfolioScreen data={portfolioData} />
+        <SocialLinks />
       </main>
     </div>
   );
