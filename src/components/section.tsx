@@ -6,11 +6,12 @@ interface SectionProps {
   icon: LucideIcon;
   children: React.ReactNode;
   className?: string;
+  id?: string;
 }
 
-export function Section({ title, icon: Icon, children, className }: SectionProps) {
+export function Section({ title, icon: Icon, children, className, id }: SectionProps) {
   return (
-    <section className={cn("py-12 md:py-16", className)}>
+    <section id={id} className={cn("py-12 md:py-16", className)}>
       <div className="flex items-center gap-4 mb-8">
         <Icon className="w-8 h-8 text-primary" />
         <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary-foreground">
