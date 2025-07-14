@@ -1,7 +1,6 @@
 import { Github, Mail, Briefcase, GraduationCap, Lightbulb, Wrench } from "lucide-react";
 import type { ResumeData } from "@/lib/types";
 import { Button } from "@/components/ui/button";
-import { Logo } from "@/components/logo";
 import { Section } from "@/components/section";
 import { Timeline } from "@/components/timeline";
 import { ProjectShowcase } from "@/components/project-showcase";
@@ -35,45 +34,25 @@ const portfolioData: ResumeData = {
   ],
   projects: [
     {
-      name: "E-Commerce Platform",
-      description: "A full-featured e-commerce website with a custom-built shopping cart, payment integration, and a product management dashboard. Built with Next.js and Tailwind CSS.",
-      link: "https://github.com/darshreddy",
+      name: "Practo",
+      description: "A healthcare platform connecting patients with doctors, offering online consultations, appointment booking, and health record management.",
+      link: "https://play.google.com/store/apps/details?id=com.practo.fabric&hl=en_IN",
     },
     {
-      name: "Data Visualization Dashboard",
-      description: "An interactive dashboard for visualizing complex datasets, allowing users to filter and explore data in real-time. Developed using D3.js and React.",
-      link: "https://github.com/darshreddy",
+      name: "Scaler",
+      description: "An ed-tech platform providing upskilling courses for tech professionals, with a focus on practical skills and career growth.",
+      link: "https://play.google.com/store/apps/details?id=com.scaler.app&hl=en_IN",
     },
     {
-      name: "Mobile Task Manager",
-      description: "A cross-platform mobile app for task management, featuring offline sync and push notifications. Built with React Native and Firebase.",
-      link: "https://github.com/darshreddy",
+      name: "Artium",
+      description: "A music learning platform offering live one-on-one classes with celebrity instructors and certified teachers.",
+      link: "https://play.google.com/store/apps/details?id=com.artiumacademy.mobile.app&hl=en_IN",
     },
   ],
 };
 
 
 export default function Home() {
-
-  const Header = () => (
-    <header className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
-      <div className="flex justify-between items-center">
-        <Logo />
-        <div className="flex items-center gap-4">
-          <Button asChild variant="ghost" size="icon">
-            <a href="mailto:darshreddy14@gmail.com" aria-label="Email">
-              <Mail className="w-6 h-6" />
-            </a>
-          </Button>
-          <Button asChild variant="ghost" size="icon">
-            <a href="https://www.github.com/darshreddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <Github className="w-6 h-6" />
-            </a>
-          </Button>
-        </div>
-      </div>
-    </header>
-  );
 
   const Hero = () => (
     <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center">
@@ -127,7 +106,7 @@ export default function Home() {
         </Section>
       )}
       {data.projects && data.projects.length > 0 && (
-        <Section title="Projects" icon={Lightbulb} id="projects">
+        <Section title="Work" icon={Lightbulb} id="projects">
           <ProjectShowcase projects={data.projects} />
         </Section>
       )}
@@ -145,7 +124,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background selection:bg-primary/20">
-      <Header />
       <main className="flex-grow flex flex-col">
         <Hero />
         <PortfolioScreen data={portfolioData} />

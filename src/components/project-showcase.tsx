@@ -15,6 +15,12 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { ExternalLink } from "lucide-react";
 
+const projectImageHints = [
+  "medical technology",
+  "online learning",
+  "music performance",
+];
+
 function ProjectDialog({ project }: { project: Project }) {
   return (
     <Dialog>
@@ -59,7 +65,7 @@ export function ProjectShowcase({ projects }: { projects: Project[] }) {
                 <CardHeader>
                   <Image
                     src={`https://placehold.co/600x400.png`}
-                    data-ai-hint="web application"
+                    data-ai-hint={projectImageHints[index % projectImageHints.length]}
                     alt={`Placeholder for ${project.name}`}
                     width={600}
                     height={400}
