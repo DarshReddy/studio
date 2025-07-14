@@ -1,3 +1,4 @@
+
 import { Github, Mail, Briefcase, GraduationCap, Lightbulb, Wrench, Linkedin, Instagram } from "lucide-react";
 import type { ResumeData } from "@/lib/types";
 import { Button } from "@/components/ui/button";
@@ -115,12 +116,12 @@ export default function Home() {
           </a>
         </Button>
         <Button asChild variant="outline" size="icon">
-          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://linkedin.com/in/darshreddy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <Linkedin />
           </a>
         </Button>
         <Button asChild variant="outline" size="icon">
-          <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <a href="https://www.instagram.com/eddy__shan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <Instagram />
           </a>
         </Button>
