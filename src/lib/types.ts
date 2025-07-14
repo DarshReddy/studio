@@ -1,3 +1,4 @@
+
 import type { ExtractResumeDataOutput } from '@/ai/flows/extract-resume-data';
 
 // Manually defining the types as we are not using the AI flow for now.
@@ -19,6 +20,7 @@ export interface Project {
   name: string;
   description: string;
   link?: string;
+  imageUrl?: string;
 };
   
 export interface ResumeData {

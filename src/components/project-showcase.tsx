@@ -2,7 +2,6 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect } from 'react';
 import { Project } from "@/lib/types";
 import {
   Carousel,
@@ -14,9 +13,7 @@ import {
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { ExternalLink, LoaderCircle } from "lucide-react";
-import { generateProjectImage } from "@/ai/flows/generate-project-image";
-import { Skeleton } from "@/components/ui/skeleton";
+import { ExternalLink } from "lucide-react";
 
 function ProjectDialog({ project }: { project: Project }) {
   return (
@@ -46,41 +43,13 @@ function ProjectDialog({ project }: { project: Project }) {
 }
 
 function ProjectImage({ project }: { project: Project }) {
-  const [imageUrl, setImageUrl] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const generateImage = async () => {
-      setIsLoading(true);
-      try {
-        const result = await generateProjectImage(project.description);
-        setImageUrl(result.imageUrl);
-      } catch (error) {
-        console.error("Failed to generate image:", error);
-        // Fallback to placeholder if AI generation fails
-        setImageUrl(`https://placehold.co/600x400.png`);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-    generateImage();
-  }, [project.description]);
-
-  if (isLoading || !imageUrl) {
-    return (
-      <div className="aspect-[3/2] w-full bg-muted rounded-t-lg flex items-center justify-center">
-        <div className="flex flex-col items-center gap-2 text-muted-foreground">
-          <LoaderCircle className="animate-spin h-8 w-8" />
-          <p className="text-sm">Generating image...</p>
-        </div>
-      </div>
-    );
-  }
-
+  const dataAiHint = project.name.toLowerCase();
+  
   return (
     <Image
-      src={imageUrl}
-      alt={`AI-generated image for ${project.name}`}
+      src={project.imageUrl || `https://placehold.co/600x400.png`}
+      alt={`Image for ${project.name}`}
+      data-ai-hint={dataAiHint}
       width={600}
       height={400}
       className="rounded-t-lg object-cover aspect-[3/2]"

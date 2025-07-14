@@ -89,18 +89,21 @@ const portfolioData: ResumeData = {
   projects: [
     {
       name: "Practo",
-      description: "A healthcare platform connecting patients with doctors, offering online consultations, appointment booking, and health record management.",
+      description: "A leading healthcare platform that connects patients with doctors, offering online consultations, appointment booking, and comprehensive health record management.",
       link: "https://play.google.com/store/apps/details?id=com.practo.fabric&hl=en_IN",
+      imageUrl: "https://placehold.co/600x400.png",
     },
     {
       name: "Artium",
-      description: "A music learning platform offering live one-on-one classes with celebrity instructors and certified teachers.",
+      description: "An innovative music learning platform that provides live, one-on-one online classes with celebrity instructors and globally recognized, certified teachers.",
       link: "https://play.google.com/store/apps/details?id=com.artiumacademy.mobile.app&hl=en_IN",
+      imageUrl: "https://placehold.co/600x400.png",
     },
     {
       name: "Scaler",
-      description: "An ed-tech platform providing upskilling courses for tech professionals, with a focus on practical skills and career growth.",
+      description: "A premier ed-tech platform focused on upskilling tech professionals, offering practical courses designed for significant career advancement and growth.",
       link: "https://play.google.com/store/apps/details?id=com.scaler.app&hl=en_IN",
+      imageUrl: "https://placehold.co/600x400.png",
     },
   ],
 };
