@@ -89,21 +89,21 @@ const portfolioData: ResumeData = {
   projects: [
     {
       name: "Practo",
-      description: "A leading healthcare platform that connects patients with doctors, offering online consultations, appointment booking, and comprehensive health record management.",
+      description: "A leading healthcare platform connecting patients with doctors and offering online consultations and appointment booking.",
       link: "https://play.google.com/store/apps/details?id=com.practo.fabric&hl=en_IN",
-      imageUrl: "https://placehold.co/600x400.png",
+      imageUrl: "https://blog.practo.com/wp-content/uploads/2020/08/Practo-Brand-Campaign-Creative-3-1024x640.jpeg",
     },
     {
       name: "Artium",
-      description: "An innovative music learning platform that provides live, one-on-one online classes with celebrity instructors and globally recognized, certified teachers.",
+      description: "An innovative music learning platform that provides live, one-on-one online classes with globally recognized celebrity instructors.",
       link: "https://play.google.com/store/apps/details?id=com.artiumacademy.mobile.app&hl=en_IN",
-      imageUrl: "https://placehold.co/600x400.png",
+      imageUrl: "https://i.ytimg.com/vi/fkLSPoILfVo/hq720.jpg",
     },
     {
       name: "Scaler",
-      description: "A premier ed-tech platform focused on upskilling tech professionals, offering practical courses designed for significant career advancement and growth.",
+      description: "A premier ed-tech platform focused on upskilling tech professionals, offering practical courses for significant career growth.",
       link: "https://play.google.com/store/apps/details?id=com.scaler.app&hl=en_IN",
-      imageUrl: "https://placehold.co/600x400.png",
+      imageUrl: "https://files.scaler.com/assets/images/about-us/about-us-banner-7-4424e68e4a1a5b48192a54465e9c93ab.png",
     },
   ],
 };
