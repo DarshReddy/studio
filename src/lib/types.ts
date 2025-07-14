@@ -1,6 +1,29 @@
 import type { ExtractResumeDataOutput } from '@/ai/flows/extract-resume-data';
 
-export type ResumeData = ExtractResumeDataOutput;
-export type Experience = ExtractResumeDataOutput['experience'][0];
-export type Education = ExtractResumeDataOutput['education'][0];
-export type Project = ExtractResumeDataOutput['projects'][0];
+// Manually defining the types as we are not using the AI flow for now.
+export interface Experience {
+  title: string;
+  company: string;
+  dates: string;
+  description: string[] | string;
+};
+
+export interface Education {
+    institution: string;
+    degree: string;
+    dates: string;
+    description: string[] | string;
+};
+  
+export interface Project {
+  name: string;
+  description: string;
+  link?: string;
+};
+  
+export interface ResumeData {
+  experience: Experience[];
+  education: Education[];
+  projects: Project[];
+  skills: string[];
+};
