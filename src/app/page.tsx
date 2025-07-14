@@ -188,11 +188,16 @@ export default function Home() {
   );
 
   return (
-    <div className="min-h-screen flex flex-col bg-background selection:bg-primary/20">
-      <main className="flex-grow flex flex-col">
-        <Hero />
-        <PortfolioScreen data={portfolioData} />
-      </main>
+    <div 
+      className="min-h-screen flex flex-col bg-cover bg-center bg-fixed selection:bg-primary/20"
+      style={{backgroundImage: "url('https://portfolio-darsh.web.app/images/image_1.jpg')"}}
+    >
+      <div className="min-h-screen flex flex-col bg-background/80 backdrop-blur-sm">
+        <main className="flex-grow flex flex-col">
+          <Hero />
+          <PortfolioScreen data={portfolioData} />
+        </main>
+      </div>
     </div>
   );
 }
