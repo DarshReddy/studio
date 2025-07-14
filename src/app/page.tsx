@@ -102,33 +102,6 @@ export default function Home() {
     </section>
   );
 
-  const SocialLinks = () => (
-    <Section title="Contact" icon={Mail} id="contact">
-      <div className="flex justify-center gap-4">
-        <Button asChild variant="outline" size="icon">
-          <a href="mailto:darshreddy14@gmail.com" aria-label="Email">
-            <Mail />
-          </a>
-        </Button>
-        <Button asChild variant="outline" size="icon">
-          <a href="https://www.github.com/darshreddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <Github />
-          </a>
-        </Button>
-        <Button asChild variant="outline" size="icon">
-          <a href="https://linkedin.com/in/darshreddy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <Linkedin />
-          </a>
-        </Button>
-        <Button asChild variant="outline" size="icon">
-          <a href="https://www.instagram.com/eddy__shan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <Instagram />
-          </a>
-        </Button>
-      </div>
-    </Section>
-  );
-
   const PortfolioScreen = ({ data }: { data: ResumeData }) => (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       {data.experience && data.experience.length > 0 && (
@@ -155,6 +128,30 @@ export default function Home() {
           </div>
         </Section>
       )}
+      <Section title="Contact" icon={Mail} id="contact">
+        <div className="flex justify-center gap-4">
+          <Button asChild variant="outline" size="icon">
+            <a href="mailto:darshreddy14@gmail.com" aria-label="Email">
+              <Mail />
+            </a>
+          </Button>
+          <Button asChild variant="outline" size="icon">
+            <a href="https://www.github.com/darshreddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <Github />
+            </a>
+          </Button>
+          <Button asChild variant="outline" size="icon">
+            <a href="https://linkedin.com/in/darshreddy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <Linkedin />
+            </a>
+          </Button>
+          <Button asChild variant="outline" size="icon">
+            <a href="https://www.instagram.com/eddy__shan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <Instagram />
+            </a>
+          </Button>
+        </div>
+      </Section>
     </div>
   );
 
@@ -163,7 +160,6 @@ export default function Home() {
       <main className="flex-grow flex flex-col">
         <Hero />
         <PortfolioScreen data={portfolioData} />
-        <SocialLinks />
       </main>
     </div>
   );
