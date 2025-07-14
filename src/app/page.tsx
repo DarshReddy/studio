@@ -9,16 +9,22 @@ import { Badge } from "@/components/ui/badge";
 const portfolioData: ResumeData = {
   experience: [
     {
-      title: "Senior Software Engineer",
-      company: "Innovate Inc.",
-      dates: "2020 - Present",
-      description: "Leading development of a new-gen platform using React and TypeScript. Architected and implemented a scalable microservices backend, improving system performance by 40%. Mentored junior developers, fostering a culture of code quality and continuous learning.",
+      title: "Software Engineer 3",
+      company: "Artium Academy",
+      dates: "Aug 2024 - Present",
+      description: "Updated all the libraries, plugins, kotlin and gradle versions in the app. Moved from Groovy to kotlin build scripts. Improved the crash-free rate to 98.8% from 91.2%. Revamped the architecture to make all APIs robust and crash-proof with proper error handling. Planned, implemented and released the changes for Artium 2.0 Globally Recognised Music Program.",
     },
     {
-      title: "Software Engineer",
-      company: "Tech Solutions",
-      dates: "2018 - 2020",
-      description: "Developed and maintained features for a large-scale e-commerce application. Collaborated with cross-functional teams to deliver high-quality software on schedule. Optimized application performance, reducing page load times by 25%.",
+      title: "Software Engineer 2 & 1",
+      company: "Scaler by InterviewBit",
+      dates: "Dec 2021 - Aug 2024",
+      description: "Built the foundations for a server-driven UI architecture for a fast and flexible app. Built CI/CD pipeline for the Android app using Jenkins, Docker, Danger, Fastlane and Supply. Built a video experience of Scaler topics in a mobile app with features like playback speed, video quality, autoplay, offline downloads and reactive modules and lessons. Added Jetpack compose support, along with Server-Driven UI support and interoperability with old SDUI components. Integrated third-party services like AppsFlyer, WebEngage, mixpanel, FB ad deeplinks SDK, Freshchat.",
+    },
+    {
+      title: "Software Engineer 1 & Intern",
+      company: "Practo",
+      dates: "Feb 2021 - Nov 2021",
+      description: "Worked on the patient side app along with the API aggregator. Built product features and fixed a few critical bugs. Was an integral part of the Practo Care - surgeries launch.",
     },
   ],
   education: [
