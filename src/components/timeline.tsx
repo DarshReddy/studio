@@ -9,11 +9,11 @@ interface TimelineItem {
 
 export function Timeline({ items }: { items: TimelineItem[] }) {
   return (
-    <div className="relative pl-6 after:absolute after:inset-y-0 after:w-px after:bg-border after:left-0">
+    <div className="relative pl-8 after:absolute after:inset-y-0 after:w-px after:bg-border after:left-0">
       {items.map((item, index) => (
         <div key={index} className="relative grid md:grid-cols-[1fr_auto] gap-x-12 pb-12 last:pb-0">
           <div className="flex flex-col items-start">
-            <div className="absolute w-3 h-3 bg-primary rounded-full -left-[7px] mt-1.5" />
+            <div className="absolute w-3 h-3 bg-primary rounded-full -left-[18px] mt-1.5" />
             <h3 className="text-xl font-bold font-headline text-primary-foreground">{item.title}</h3>
             <p className="text-lg text-primary">{item.subtitle}</p>
             {Array.isArray(item.description) ? (
