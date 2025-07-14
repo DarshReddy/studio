@@ -97,13 +97,13 @@ const portfolioData: ResumeData = {
       name: "Artium",
       description: "An innovative music learning platform that provides live, one-on-one online classes with globally recognized celebrity instructors.",
       link: "https://play.google.com/store/apps/details?id=com.artiumacademy.mobile.app&hl=en_IN",
-      imageUrl: "https://i.ytimg.com/vi/fkLSPoILfVo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCcZ-mRxxbRBr4OWwn4wrz6dKuRTQ",
+      imageUrl: "https://yt3.googleusercontent.com/sBfZT7Sm8ei9s5PzlDr-IPtJBq2qnvZh6gSluZhEZZ0XJqwEwXHyyhi8Z-gWyTp2Ox4VC2tzNg=s900-c-k-c0x00ffffff-no-rj",
     },
     {
       name: "Scaler",
       description: "A premier ed-tech platform focused on upskilling tech professionals, offering practical courses for significant career growth.",
       link: "https://play.google.com/store/apps/details?id=com.scaler.app&hl=en_IN",
-      imageUrl: "https://files.scaler.com/assets/images/about-us/about-us-banner-7-4424e68e4a1a5b48192a54465e9c93ab.png",
+      imageUrl: "https://scaler-blog-prod-wp-content.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/04/22114231/Scaler-HT.png",
     },
   ],
 };
