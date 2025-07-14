@@ -15,7 +15,7 @@ export function Timeline({ items }: { items: TimelineItem[] }) {
     <Accordion type="single" collapsible className="w-full">
       {items.map((item, index) => (
         <AccordionItem value={`item-${index}`} key={index}>
-          <div className="relative pl-10 after:absolute after:inset-y-0 after:w-0.5 after:bg-border after:left-4">
+          <div className="relative pl-10">
             <div className="absolute w-4 h-4 bg-primary rounded-full left-[10px] top-1/2 -translate-y-1/2 ring-4 ring-background" />
             <AccordionTrigger className="w-full py-6 text-left hover:no-underline">
               <div className="grid md:grid-cols-[1fr_auto] gap-x-12 w-full pr-4">
