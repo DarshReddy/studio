@@ -17,8 +17,8 @@ import { ExternalLink } from "lucide-react";
 
 const projectImageHints = [
   "medical technology",
-  "online learning",
   "music performance",
+  "online learning",
 ];
 
 function ProjectDialog({ project }: { project: Project }) {

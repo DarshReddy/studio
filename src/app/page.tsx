@@ -39,14 +39,14 @@ const portfolioData: ResumeData = {
       link: "https://play.google.com/store/apps/details?id=com.practo.fabric&hl=en_IN",
     },
     {
-      name: "Scaler",
-      description: "An ed-tech platform providing upskilling courses for tech professionals, with a focus on practical skills and career growth.",
-      link: "https://play.google.com/store/apps/details?id=com.scaler.app&hl=en_IN",
-    },
-    {
       name: "Artium",
       description: "A music learning platform offering live one-on-one classes with celebrity instructors and certified teachers.",
       link: "https://play.google.com/store/apps/details?id=com.artiumacademy.mobile.app&hl=en_IN",
+    },
+    {
+      name: "Scaler",
+      description: "An ed-tech platform providing upskilling courses for tech professionals, with a focus on practical skills and career growth.",
+      link: "https://play.google.com/store/apps/details?id=com.scaler.app&hl=en_IN",
     },
   ],
 };
