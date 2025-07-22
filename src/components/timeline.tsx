@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
@@ -16,7 +17,7 @@ export function Timeline({ items }: { items: TimelineItem[] }) {
   return (
     <Accordion type="single" collapsible className="w-full">
       {items.map((item, index) => (
-        <AccordionItem value={`item-${index}`} key={index} className="transition-all duration-300 ease-in-out data-[state=open]:bg-secondary/20 rounded-lg">
+        <AccordionItem value={`item-${index}`} key={index} className="transition-all duration-300 ease-in-out data-[state=open]:bg-secondary/20 rounded-lg data-[state=open]:px-4">
           <div className="relative pl-10">
             {item.logoUrl ? (
                 <div className="absolute left-[2px] top-1/2 -translate-y-1/2 ring-4 ring-background rounded-full overflow-hidden">
