@@ -6,9 +6,13 @@ import type { ResumeData } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/section";
 import { Timeline } from "@/components/timeline";
-import { ProjectShowcase } from "@/components/project-showcase";
 import { Badge } from "@/components/ui/badge";
-import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
+
+const ProjectShowcase = dynamic(() => import('@/components/project-showcase').then(mod => mod.ProjectShowcase), {
+  ssr: false,
+});
+
 
 const portfolioData: ResumeData = {
   experience: [
@@ -116,13 +120,8 @@ const portfolioData: ResumeData = {
 
 
 export default function Home() {
-  const [isMounted, setIsMounted] = useState(false);
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
   const Hero = () => (
-    <section className={`container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center transition-all duration-1000 ease-out ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+    <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center transition-all duration-1000 ease-out opacity-100 translate-y-0">
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-headline tracking-tight text-primary-foreground">
         Darsh Reddy
       </h1>
