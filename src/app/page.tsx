@@ -1,7 +1,7 @@
 
 "use client";
 
-import { Github, Mail, Briefcase, GraduationCap, Lightbulb, Wrench, Linkedin, Instagram } from "lucide-react";
+import { Github, Mail, Briefcase, GraduationCap, Lightbulb, Wrench, Linkedin, Instagram, Phone } from "lucide-react";
 import type { ResumeData } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/section";
@@ -165,6 +165,11 @@ export default function Home() {
           <Button asChild variant="outline" size="icon">
             <a href="mailto:darshreddy14@gmail.com" aria-label="Email">
               <Mail />
+            </a>
+          </Button>
+          <Button asChild variant="outline" size="icon">
+            <a href="tel:+917899746088" aria-label="Phone">
+              <Phone />
             </a>
           </Button>
           <Button asChild variant="outline" size="icon">
