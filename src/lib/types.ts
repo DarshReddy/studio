@@ -7,6 +7,7 @@ export interface Experience {
   company: string;
   dates: string;
   description: string[] | string;
+  logoUrl?: string;
 };
 
 export interface Education {
@@ -14,6 +15,7 @@ export interface Education {
     degree: string;
     dates: string;
     description: string[] | string;
+    logoUrl?: string;
 };
   
 export interface Project {

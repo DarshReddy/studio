@@ -16,6 +16,7 @@ const portfolioData: ResumeData = {
       title: "Software Engineer 3",
       company: "Artium Academy",
       dates: "Aug 2024 - Present",
+      logoUrl: "https://yt3.googleusercontent.com/sBfZT7Sm8ei9s5PzlDr-IPtJBq2qnvZh6gSluZhEZZ0XJqwEwXHyyhi8Z-gWyTp2Ox4VC2tzNg=s900-c-k-c0x00ffffff-no-rj",
       description: [
         "Updated all the libraries, plugins, kotlin and gradle versions in the app. Moved from Groovy to kotlin build scripts",
         "Improved the crash-free rate to 98.8% from 91.2%",
@@ -27,6 +28,7 @@ const portfolioData: ResumeData = {
       title: "Software Engineer 2",
       company: "Scaler by InterviewBit",
       dates: "Jan 2023 - Aug 2024",
+      logoUrl: "https://scaler-blog-prod-wp-content.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/04/22114231/Scaler-HT.png",
       description: [
         "Built the foundations for a server-driven UI architecture for a fast and flexible app.",
         "Built CI/CD pipeline for the Android app using Jenkins, Docker, Danger, Fastlane and Supply",
@@ -39,6 +41,7 @@ const portfolioData: ResumeData = {
         title: "Software Engineer 1",
         company: "Scaler by InterviewBit",
         dates: "Dec 2021 - Dec 2022",
+        logoUrl: "https://scaler-blog-prod-wp-content.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/04/22114231/Scaler-HT.png",
         description: [
             "Built the foundations for a server-driven UI architecture for a fast and flexible app.",
             "Built CI/CD pipeline for the Android app using Jenkins, Docker, Danger, Fastlane and Supply",
@@ -51,6 +54,7 @@ const portfolioData: ResumeData = {
       title: "Software Engineer 1",
       company: "Practo",
       dates: "Aug 2021 - Nov 2021",
+      logoUrl: "https://blog.practo.com/wp-content/uploads/2020/08/Practo-Brand-Campaign-Creative-3-1024x640.jpeg",
       description: [
         "Worked on the patient side app along with the API aggregator.",
         "Built product features and fixed a few critical bugs.",
@@ -61,6 +65,7 @@ const portfolioData: ResumeData = {
         title: "Intern",
         company: "Practo",
         dates: "Feb 2021 - Jul 2021",
+        logoUrl: "https://blog.practo.com/wp-content/uploads/2020/08/Practo-Brand-Campaign-Creative-3-1024x640.jpeg",
         description: [
             "Worked on the patient side app along with the API aggregator.",
             "Built product features and fixed a few critical bugs.",
@@ -89,19 +94,19 @@ const portfolioData: ResumeData = {
   projects: [
     {
       name: "Practo",
-      description: "A leading healthcare platform connecting patients with doctors, offering online consultations, and simplifying appointment booking.",
+      description: "A leading healthcare platform connecting patients with doctors, offering online consultations, and simplifying appointment booking for millions.",
       link: "https://play.google.com/store/apps/details?id=com.practo.fabric&hl=en_IN",
       imageUrl: "https://blog.practo.com/wp-content/uploads/2020/08/Practo-Brand-Campaign-Creative-3-1024x640.jpeg",
     },
     {
       name: "Artium",
-      description: "An innovative music learning platform that provides live, one-on-one online classes with globally recognized celebrity instructors.",
+      description: "An innovative music learning platform providing live, one-on-one online classes with globally recognized celebrity instructors.",
       link: "https://play.google.com/store/apps/details?id=com.artiumacademy.mobile.app&hl=en_IN",
       imageUrl: "https://yt3.googleusercontent.com/sBfZT7Sm8ei9s5PzlDr-IPtJBq2qnvZh6gSluZhEZZ0XJqwEwXHyyhi8Z-gWyTp2Ox4VC2tzNg=s900-c-k-c0x00ffffff-no-rj",
     },
     {
       name: "Scaler",
-      description: "A premier ed-tech platform for upskilling tech professionals, offering practical courses that lead to significant career growth.",
+      description: "A premier ed-tech platform for upskilling tech professionals with courses that lead to significant career growth and success.",
       link: "https://play.google.com/store/apps/details?id=com.scaler.app&hl=en_IN",
       imageUrl: "https://scaler-blog-prod-wp-content.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/04/22114231/Scaler-HT.png",
     },
