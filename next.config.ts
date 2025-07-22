@@ -53,6 +53,10 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'campushunt.in',
       },
+      {
+        protocol: 'https',
+        hostname: 'media.licdn.com',
+      },
     ],
   },
 };

@@ -78,7 +78,7 @@ const portfolioData: ResumeData = {
       institution: "University Visvesvaraya College of Engineering",
       degree: "Bachelor of Engineering in Computer Science",
       dates: "2017 - 2021",
-      logoUrl: "https://campushunt.in/collegelogo/unvsty-visvesvaraya-clg-of-eng-logo-830.jpg",
+      logoUrl: "https://media.licdn.com/dms/image/v2/C4E03AQEtmoE5SiZTlQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1632927493448?e=2147483647&v=beta&t=NfZ_NVCrkZTghNzKWIvqbs2gZKFVGfzR7rR4ig44rAk",
       description: "Graduated with honors. Focused on software engineering, algorithms, and data structures. Active member of the coding club and participated in several hackathons.",
     },
   ],
