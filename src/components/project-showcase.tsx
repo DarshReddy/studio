@@ -14,21 +14,6 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 
-function ProjectImage({ project }: { project: Project }) {
-  const dataAiHint = project.name.toLowerCase();
-  
-  return (
-    <Image
-      src={project.imageUrl || `https://placehold.co/600x400.png`}
-      alt={`Image for ${project.name}`}
-      data-ai-hint={dataAiHint}
-      width={600}
-      height={400}
-      className="rounded-t-lg object-cover aspect-[3/2]"
-    />
-  );
-}
-
 export function ProjectShowcase({ projects }: { projects: Project[] }) {
   return (
     <Carousel
@@ -41,10 +26,17 @@ export function ProjectShowcase({ projects }: { projects: Project[] }) {
       <CarouselContent>
         {projects.map((project, index) => (
           <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-            <div className="p-1">
+            <div className="p-1 h-full">
               <Card className="h-full flex flex-col">
                 <CardHeader>
-                  <ProjectImage project={project} />
+                  <Image
+                    src={project.imageUrl || `https://placehold.co/600x400.png`}
+                    alt={`Image for ${project.name}`}
+                    data-ai-hint={project.name.toLowerCase()}
+                    width={600}
+                    height={400}
+                    className="rounded-t-lg object-cover aspect-[3/2]"
+                  />
                   <CardTitle className="font-headline pt-4">{project.name}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">
