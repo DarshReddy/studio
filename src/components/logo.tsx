@@ -32,7 +32,7 @@ export function Logo() {
         />
       </svg>
       <h1 className="text-2xl font-bold font-headline text-primary-foreground">
-        Resume Refined
+        Darsh Reddy
       </h1>
     </div>
   );
