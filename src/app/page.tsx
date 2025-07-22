@@ -89,7 +89,7 @@ const portfolioData: ResumeData = {
   projects: [
     {
       name: "Practo",
-      description: "A leading healthcare platform connecting patients with doctors and offering online consultations and appointment booking.",
+      description: "A leading healthcare platform connecting patients with doctors, offering online consultations, and simplifying appointment booking.",
       link: "https://play.google.com/store/apps/details?id=com.practo.fabric&hl=en_IN",
       imageUrl: "https://blog.practo.com/wp-content/uploads/2020/08/Practo-Brand-Campaign-Creative-3-1024x640.jpeg",
     },
@@ -101,7 +101,7 @@ const portfolioData: ResumeData = {
     },
     {
       name: "Scaler",
-      description: "A premier ed-tech platform focused on upskilling tech professionals, offering practical courses for significant career growth.",
+      description: "A premier ed-tech platform for upskilling tech professionals, offering practical courses that lead to significant career growth.",
       link: "https://play.google.com/store/apps/details?id=com.scaler.app&hl=en_IN",
       imageUrl: "https://scaler-blog-prod-wp-content.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/04/22114231/Scaler-HT.png",
     },
@@ -163,27 +163,27 @@ export default function Home() {
       <Section title="Contact" icon={Mail} id="contact">
         <div className="flex justify-center gap-4">
           <Button asChild variant="outline" size="icon">
-            <a href="mailto:darshreddy14@gmail.com" aria-label="Email">
+            <a href="mailto:darshreddy14@gmail.com" aria-label="Email" className="transition-transform hover:scale-110 active:scale-100">
               <Mail />
             </a>
           </Button>
           <Button asChild variant="outline" size="icon">
-            <a href="tel:+917899746088" aria-label="Phone">
+            <a href="tel:+917899746088" aria-label="Phone" className="transition-transform hover:scale-110 active:scale-100">
               <Phone />
             </a>
           </Button>
           <Button asChild variant="outline" size="icon">
-            <a href="https://www.github.com/darshreddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <a href="https://www.github.com/darshreddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="transition-transform hover:scale-110 active:scale-100">
               <Github />
             </a>
           </Button>
           <Button asChild variant="outline" size="icon">
-            <a href="https://linkedin.com/in/darshreddy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://linkedin.com/in/darshreddy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="transition-transform hover:scale-110 active:scale-100">
               <Linkedin />
             </a>
           </Button>
           <Button asChild variant="outline" size="icon">
-            <a href="https://www.instagram.com/eddy__shan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/eddy__shan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="transition-transform hover:scale-110 active:scale-100">
               <Instagram />
             </a>
           </Button>
@@ -197,7 +197,7 @@ export default function Home() {
       className="min-h-screen flex flex-col bg-cover bg-center bg-fixed selection:bg-primary/20"
       style={{backgroundImage: "url('https://portfolio-darsh.web.app/images/image_1.jpg')"}}
     >
-      <div className="min-h-screen flex flex-col bg-background/90 backdrop-blur-sm">
+      <div className="min-h-screen flex flex-col bg-background/95 backdrop-blur-sm">
         <main className="flex-grow flex flex-col">
           <Hero />
           <PortfolioScreen data={portfolioData} />
