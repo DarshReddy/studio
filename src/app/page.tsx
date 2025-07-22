@@ -28,7 +28,7 @@ const portfolioData: ResumeData = {
       title: "Software Engineer 2",
       company: "Scaler by InterviewBit",
       dates: "Jan 2023 - Aug 2024",
-      logoUrl: "https://d1psgljc389n8q.cloudfront.net/bootcamps/logos/yxP3k4ukr",
+      logoUrl: "https://play-lh.googleusercontent.com/CUTEE0Q3qo4kiFK20N9_MmJdBtO-QZpuDhQEfMU1HneFSbmPLf7UiympkbFVITH1pZA",
       description: [
         "Built the foundations for a server-driven UI architecture for a fast and flexible app.",
         "Built CI/CD pipeline for the Android app using Jenkins, Docker, Danger, Fastlane and Supply",
@@ -41,7 +41,7 @@ const portfolioData: ResumeData = {
         title: "Software Engineer 1",
         company: "Scaler by InterviewBit",
         dates: "Dec 2021 - Dec 2022",
-        logoUrl: "https://d1psgljc389n8q.cloudfront.net/bootcamps/logos/yxP3k4ukr",
+        logoUrl: "https://play-lh.googleusercontent.com/CUTEE0Q3qo4kiFK20N9_MmJdBtO-QZpuDhQEfMU1HneFSbmPLf7UiympkbFVITH1pZA",
         description: [
             "Built the foundations for a server-driven UI architecture for a fast and flexible app.",
             "Built CI/CD pipeline for the Android app using Jenkins, Docker, Danger, Fastlane and Supply",
@@ -54,7 +54,7 @@ const portfolioData: ResumeData = {
       title: "Software Engineer 1",
       company: "Practo",
       dates: "Aug 2021 - Nov 2021",
-      logoUrl: "https://www.practo.com/providers/static/images/og-image-consumer.png",
+      logoUrl: "https://play-lh.googleusercontent.com/FzTCIxV68Dg3Qjl-VUtGef2NpQ_JdKhj-RXcPdEN8O5XB8TSSLqlwAWBnd7tJGUrW_Q",
       description: [
         "Worked on the patient side app along with the API aggregator.",
         "Built product features and fixed a few critical bugs.",
@@ -65,7 +65,7 @@ const portfolioData: ResumeData = {
         title: "Intern",
         company: "Practo",
         dates: "Feb 2021 - Jul 2021",
-        logoUrl: "https://www.practo.com/providers/static/images/og-image-consumer.png",
+        logoUrl: "https://play-lh.googleusercontent.com/FzTCIxV68Dg3Qjl-VUtGef2NpQ_JdKhj-RXcPdEN8O5XB8TSSLqlwAWBnd7tJGUrW_Q",
         description: [
             "Worked on the patient side app along with the API aggregator.",
             "Built product features and fixed a few critical bugs.",
@@ -211,3 +211,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
