@@ -23,14 +23,6 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'i.ytimg.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'assets-v2.scaler.com',
-      },
-      {
-        protocol: 'https',
         hostname: 'yt3.googleusercontent.com',
       },
       {
@@ -39,19 +31,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'www.practo.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'd1psgljc389n8q.cloudfront.net',
-      },
-      {
-        protocol: 'https',
         hostname: 'play-lh.googleusercontent.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'campushunt.in',
       },
       {
         protocol: 'https',
