@@ -1,3 +1,4 @@
+
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
@@ -26,10 +27,6 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'files.scaler.com',
-      },
-      {
-        protocol: 'https',
         hostname: 'assets-v2.scaler.com',
       },
       {
@@ -39,6 +36,18 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'scaler-blog-prod-wp-content.s3.ap-south-1.amazonaws.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.practo.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'd1psgljc389n8q.cloudfront.net',
+      },
+      {
+        protocol: 'https',
+        hostname: 'play-lh.googleusercontent.com',
       },
     ],
   },
