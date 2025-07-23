@@ -21,7 +21,7 @@ const portfolioData: ResumeData = {
       title: "Software Engineer 3",
       company: "Artium Academy",
       dates: "Aug 2024 - Present",
-      logoUrl: "/images/artium.png",
+      logoUrl: "/images/artium_logo.webp",
       description: [
         "Updated all the libraries, plugins, kotlin and gradle versions in the app. Moved from Groovy to kotlin build scripts",
         "Improved the crash-free rate to 98.8% from 91.2%",
@@ -33,7 +33,7 @@ const portfolioData: ResumeData = {
       title: "Software Engineer 2",
       company: "Scaler by InterviewBit",
       dates: "Jan 2023 - Aug 2024",
-      logoUrl: "/images/scaler.png",
+      logoUrl: "/images/scaler_logo.webp",
       description: [
         "Built the foundations for a server-driven UI architecture for a fast and flexible app.",
         "Built CI/CD pipeline for the Android app using Jenkins, Docker, Danger, Fastlane and Supply",
@@ -46,7 +46,7 @@ const portfolioData: ResumeData = {
         title: "Software Engineer 1",
         company: "Scaler by InterviewBit",
         dates: "Dec 2021 - Dec 2022",
-        logoUrl: "/images/scaler.png",
+        logoUrl: "/images/scaler_logo.webp",
         description: [
             "Built the foundations for a server-driven UI architecture for a fast and flexible app.",
             "Built CI/CD pipeline for the Android app using Jenkins, Docker, Danger, Fastlane and Supply",
@@ -59,7 +59,7 @@ const portfolioData: ResumeData = {
       title: "Software Engineer 1",
       company: "Practo",
       dates: "Aug 2021 - Nov 2021",
-      logoUrl: "/images/practo.png",
+      logoUrl: "/images/practo_logo.webp",
       description: [
         "Worked on the patient side app along with the API aggregator.",
         "Built product features and fixed a few critical bugs.",
@@ -70,7 +70,7 @@ const portfolioData: ResumeData = {
         title: "Intern",
         company: "Practo",
         dates: "Feb 2021 - Jul 2021",
-        logoUrl: "/images/practo.png",
+        logoUrl: "/images/practo_logo.webp",
         description: [
             "Worked on the patient side app along with the API aggregator.",
             "Built product features and fixed a few critical bugs.",
@@ -83,7 +83,7 @@ const portfolioData: ResumeData = {
       institution: "University Visvesvaraya College of Engineering",
       degree: "Bachelor of Engineering in Computer Science",
       dates: "2017 - 2021",
-      logoUrl: "/images/uvce.png",
+      logoUrl: "/images/uvce_logo.webp",
       description: "Focused on software engineering, algorithms, and data structures. Active member of the IEEE club and Runner up in TechRoadies and Kagathon. Core member and advisor for Adhamya and Tatva - cultural clubs",
     },
   ],
