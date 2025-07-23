@@ -8,7 +8,6 @@ import { Section } from "@/components/section";
 import { Timeline } from "@/components/timeline";
 import { Badge } from "@/components/ui/badge";
 import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
 
 const ProjectShowcase = dynamic(() => import('@/components/project-showcase').then(mod => mod.ProjectShowcase), {
   ssr: false,
@@ -121,89 +120,6 @@ const portfolioData: ResumeData = {
 
 
 export default function Home() {
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  const Hero = () => (
-    <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center transition-all duration-1000 ease-out opacity-100 translate-y-0">
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-headline tracking-tight text-primary-foreground">
-        Darsh Reddy
-      </h1>
-      <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-        A passionate and creative Senior Software Engineer with a knack for building beautiful, scalable, and user-friendly applications.
-      </p>
-      <div className="mt-8 flex justify-center gap-4">
-        <Button asChild size="lg">
-          <a href="#projects">View My Work</a>
-        </Button>
-        <Button asChild size="lg" variant="secondary">
-          <a href="#contact">Get in Touch</a>
-        </Button>
-      </div>
-    </section>
-  );
-
-  const PortfolioScreen = ({ data }: { data: ResumeData }) => (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-      {data.experience && data.experience.length > 0 && (
-        <Section title="Experience" icon={Briefcase}>
-          <Timeline items={data.experience.map(exp => ({ ...exp, subtitle: exp.company }))} />
-        </Section>
-      )}
-      {data.education && data.education.length > 0 && (
-        <Section title="Education" icon={GraduationCap}>
-          <Timeline items={data.education.map(edu => ({ title: edu.degree, subtitle: edu.institution, ...edu }))} />
-        </Section>
-      )}
-      {data.projects && data.projects.length > 0 && (
-        <Section title="Work" icon={Lightbulb} id="projects">
-          {isMounted && <ProjectShowcase projects={data.projects} />}
-        </Section>
-      )}
-      {data.skills && data.skills.length > 0 && (
-        <Section title="Skills" icon={Wrench}>
-          <div className="flex flex-wrap gap-3">
-            {data.skills.map((skill) => (
-              <Badge key={skill} variant="secondary" className="text-base px-4 py-2">{skill}</Badge>
-            ))}
-          </div>
-        </Section>
-      )}
-      <Section title="Contact" icon={Mail} id="contact">
-        <div className="flex justify-center gap-4">
-          <Button asChild variant="outline" size="icon">
-            <a href="mailto:darshreddy14@gmail.com" aria-label="Email" className="transition-transform hover:scale-110 active:scale-100">
-              <Mail />
-            </a>
-          </Button>
-          <Button asChild variant="outline" size="icon">
-            <a href="tel:+917899746088" aria-label="Phone" className="transition-transform hover:scale-110 active:scale-100">
-              <Phone />
-            </a>
-          </Button>
-          <Button asChild variant="outline" size="icon">
-            <a href="https://www.github.com/darshreddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="transition-transform hover:scale-110 active:scale-100">
-              <Github />
-            </a>
-          </Button>
-          <Button asChild variant="outline" size="icon">
-            <a href="https://linkedin.com/in/darshreddy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="transition-transform hover:scale-110 active:scale-100">
-              <Linkedin />
-            </a>
-          </Button>
-          <Button asChild variant="outline" size="icon">
-            <a href="https://www.instagram.com/eddy__shan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="transition-transform hover:scale-110 active:scale-100">
-              <Instagram />
-            </a>
-          </Button>
-        </div>
-      </Section>
-    </div>
-  );
-
   return (
     <div 
       className="min-h-screen flex flex-col bg-cover bg-center bg-fixed selection:bg-primary/20"
@@ -218,3 +134,80 @@ export default function Home() {
     </div>
   );
 }
+
+const Hero = () => (
+  <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center transition-all duration-1000 ease-out opacity-100 translate-y-0">
+    <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-headline tracking-tight text-primary-foreground">
+      Darsh Reddy
+    </h1>
+    <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+      A passionate and creative Senior Software Engineer with a knack for building beautiful, scalable, and user-friendly applications.
+    </p>
+    <div className="mt-8 flex justify-center gap-4">
+      <Button asChild size="lg">
+        <a href="#projects">View My Work</a>
+      </Button>
+      <Button asChild size="lg" variant="secondary">
+        <a href="#contact">Get in Touch</a>
+      </Button>
+    </div>
+  </section>
+);
+
+const PortfolioScreen = ({ data }: { data: ResumeData }) => (
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    {data.experience && data.experience.length > 0 && (
+      <Section title="Experience" icon={Briefcase}>
+        <Timeline items={data.experience.map(exp => ({ ...exp, subtitle: exp.company }))} />
+      </Section>
+    )}
+    {data.education && data.education.length > 0 && (
+      <Section title="Education" icon={GraduationCap}>
+        <Timeline items={data.education.map(edu => ({ title: edu.degree, subtitle: edu.institution, ...edu }))} />
+      </Section>
+    )}
+    {data.projects && data.projects.length > 0 && (
+      <Section title="Work" icon={Lightbulb} id="projects">
+        <ProjectShowcase projects={data.projects} />
+      </Section>
+    )}
+    {data.skills && data.skills.length > 0 && (
+      <Section title="Skills" icon={Wrench}>
+        <div className="flex flex-wrap gap-3">
+          {data.skills.map((skill) => (
+            <Badge key={skill} variant="secondary" className="text-base px-4 py-2">{skill}</Badge>
+          ))}
+        </div>
+      </Section>
+    )}
+    <Section title="Contact" icon={Mail} id="contact">
+      <div className="flex justify-center gap-4">
+        <Button asChild variant="outline" size="icon">
+          <a href="mailto:darshreddy14@gmail.com" aria-label="Email" className="transition-transform hover:scale-110 active:scale-100">
+            <Mail />
+          </a>
+        </Button>
+        <Button asChild variant="outline" size="icon">
+          <a href="tel:+917899746088" aria-label="Phone" className="transition-transform hover:scale-110 active:scale-100">
+            <Phone />
+          </a>
+        </Button>
+        <Button asChild variant="outline" size="icon">
+          <a href="https://www.github.com/darshreddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="transition-transform hover:scale-110 active:scale-100">
+            <Github />
+          </a>
+        </Button>
+        <Button asChild variant="outline" size="icon">
+          <a href="https://linkedin.com/in/darshreddy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="transition-transform hover:scale-110 active:scale-100">
+            <Linkedin />
+          </a>
+        </Button>
+        <Button asChild variant="outline" size="icon">
+          <a href="https://www.instagram.com/eddy__shan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="transition-transform hover:scale-110 active:scale-100">
+            <Instagram />
+          </a>
+        </Button>
+      </div>
+    </Section>
+  </div>
+);
