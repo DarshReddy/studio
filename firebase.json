@@ -1,7 +1,6 @@
 {
   "hosting": {
     "site": "darshreddy",
-    "public": "public",
     "source": ".",
     "ignore": [
       "firebase.json",
