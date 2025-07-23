@@ -21,7 +21,7 @@ const portfolioData: ResumeData = {
       title: "Software Engineer 3",
       company: "Artium Academy",
       dates: "Aug 2024 - Present",
-      logoUrl: "/images/artium.png",
+      logoUrl: "/images/artium_logo.webp",
       description: [
         "Updated all the libraries, plugins, kotlin and gradle versions in the app. Moved from Groovy to kotlin build scripts",
         "Improved the crash-free rate to 98.8% from 91.2%",
@@ -33,7 +33,7 @@ const portfolioData: ResumeData = {
       title: "Software Engineer 2",
       company: "Scaler by InterviewBit",
       dates: "Jan 2023 - Aug 2024",
-      logoUrl: "/images/scaler.png",
+      logoUrl: "/images/scaler_logo.webp",
       description: [
         "Built the foundations for a server-driven UI architecture for a fast and flexible app.",
         "Built CI/CD pipeline for the Android app using Jenkins, Docker, Danger, Fastlane and Supply",
@@ -46,7 +46,7 @@ const portfolioData: ResumeData = {
         title: "Software Engineer 1",
         company: "Scaler by InterviewBit",
         dates: "Dec 2021 - Dec 2022",
-        logoUrl: "/images/scaler.png",
+        logoUrl: "/images/scaler_logo.webp",
         description: [
             "Built the foundations for a server-driven UI architecture for a fast and flexible app.",
             "Built CI/CD pipeline for the Android app using Jenkins, Docker, Danger, Fastlane and Supply",
@@ -59,7 +59,7 @@ const portfolioData: ResumeData = {
       title: "Software Engineer 1",
       company: "Practo",
       dates: "Aug 2021 - Nov 2021",
-      logoUrl: "/images/practo.png",
+      logoUrl: "/images/practo_logo.webp",
       description: [
         "Worked on the patient side app along with the API aggregator.",
         "Built product features and fixed a few critical bugs.",
@@ -70,7 +70,7 @@ const portfolioData: ResumeData = {
         title: "Intern",
         company: "Practo",
         dates: "Feb 2021 - Jul 2021",
-        logoUrl: "/images/practo.png",
+        logoUrl: "/images/practo_logo.webp",
         description: [
             "Worked on the patient side app along with the API aggregator.",
             "Built product features and fixed a few critical bugs.",
@@ -83,7 +83,7 @@ const portfolioData: ResumeData = {
       institution: "University Visvesvaraya College of Engineering",
       degree: "Bachelor of Engineering in Computer Science",
       dates: "2017 - 2021",
-      logoUrl: "/images/uvce.png",
+      logoUrl: "/images/uvce_logo.webp",
       description: "Focused on software engineering, algorithms, and data structures. Active member of the IEEE club and Runner up in TechRoadies and Kagathon. Core member and advisor for Adhamya and Tatva - cultural clubs",
     },
   ],
@@ -125,7 +125,7 @@ export default function Home() {
     <div className="min-h-screen bg-background font-sans text-foreground">
       <div 
         className="min-h-screen flex flex-col bg-cover bg-center bg-fixed selection:bg-primary/20"
-        style={{backgroundImage: "url('/images/image_1.jpg')"}}
+        style={{backgroundImage: "url('/images/bg.jpg')"}}
       >
         <div className="min-h-screen flex flex-col bg-background/95 backdrop-blur-sm">
           <main className="flex-grow flex flex-col">
@@ -140,15 +140,6 @@ export default function Home() {
 
 const Hero = () => (
   <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center transition-all duration-1000 ease-out opacity-100 translate-y-0">
-    <div className="w-24 h-24 mx-auto rounded-full overflow-hidden ring-4 ring-primary mb-4">
-      <Image
-        src="/images/profile.jpeg"
-        alt="Darsh Reddy"
-        width={96}
-        height={96}
-        className="object-cover"
-      />
-    </div>
     <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-headline tracking-tight text-primary-foreground">
       Darsh Reddy
     </h1>
@@ -191,7 +182,7 @@ const PortfolioScreen = ({ data }: { data: ResumeData }) => {
               <Badge key={skill} variant="secondary" className="text-base px-4 py-2">{skill}</Badge>
             ))}
           </div>
-        </section>
+        </Section>
       )}
       <Section title="Contact" icon={Mail} id="contact">
         <div className="flex justify-center gap-4">
