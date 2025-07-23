@@ -1,7 +1,7 @@
 
 "use client";
 
-import { Github, Mail, Briefcase, GraduationCap, Lightbulb, Wrench, Linkedin, Instagram, Phone, Code, Smartphone, Layout, GitFork, Server, HardDrive } from "lucide-react";
+import { Github, Mail, Briefcase, GraduationCap, Lightbulb, Wrench, Linkedin, Instagram, Phone, Code, Smartphone, Layout, GitFork, Server, HardDrive, Cpu, Blocks, Puzzle, BrainCircuit, Component } from "lucide-react";
 import type { ResumeData } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/section";
@@ -217,5 +217,3 @@ const PortfolioScreen = ({ data }: { data: ResumeData }) => (
     </Section>
   </div>
 );
-
-    
