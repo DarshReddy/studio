@@ -20,7 +20,7 @@ const portfolioData: ResumeData = {
       title: "Software Engineer 3",
       company: "Artium Academy",
       dates: "Aug 2024 - Present",
-      logoUrl: "https://play-lh.googleusercontent.com/b7hec6hPys3PYwUO8ZFOLzGHp8KKAnA1_vP5H5uEzBrWr-_wqidNBYmLqdAmEEj9m2g=w240-h480-rw",
+      logoUrl: "https://www.artiumacademy.com/images/logo-dark.svg",
       description: [
         "Updated all the libraries, plugins, kotlin and gradle versions in the app. Moved from Groovy to kotlin build scripts",
         "Improved the crash-free rate to 98.8% from 91.2%",
