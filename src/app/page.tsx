@@ -8,6 +8,7 @@ import { Section } from "@/components/section";
 import { Timeline } from "@/components/timeline";
 import { Badge } from "@/components/ui/badge";
 import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
 
 const ProjectShowcase = dynamic(() => import('@/components/project-showcase').then(mod => mod.ProjectShowcase), {
   ssr: false,
@@ -120,6 +121,12 @@ const portfolioData: ResumeData = {
 
 
 export default function Home() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const Hero = () => (
     <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center transition-all duration-1000 ease-out opacity-100 translate-y-0">
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-headline tracking-tight text-primary-foreground">
@@ -153,7 +160,7 @@ export default function Home() {
       )}
       {data.projects && data.projects.length > 0 && (
         <Section title="Work" icon={Lightbulb} id="projects">
-          <ProjectShowcase projects={data.projects} />
+          {isMounted && <ProjectShowcase projects={data.projects} />}
         </Section>
       )}
       {data.skills && data.skills.length > 0 && (
@@ -211,5 +218,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
