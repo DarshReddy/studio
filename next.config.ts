@@ -27,10 +27,6 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'play-lh.googleusercontent.com',
-      },
-      {
-        protocol: 'https',
         hostname: 'scaler-blog-prod-wp-content.s3.ap-south-1.amazonaws.com',
       },
       {
@@ -46,3 +42,5 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+    

@@ -32,7 +32,7 @@ const portfolioData: ResumeData = {
       title: "Software Engineer 2",
       company: "Scaler by InterviewBit",
       dates: "Jan 2023 - Aug 2024",
-      logoUrl: "https://play-lh.googleusercontent.com/CUTEE0Q3qo4kiFK20N9_MmJdBtO-QZpuDhQEfMU1HneFSbmPLf7UiympkbFVITH1pZA",
+      logoUrl: "https://scaler-blog-prod-wp-content.s3.ap-south-1.amazonaws.com/wp-content/uploads/2022/02/15181709/scaler-social-card.png",
       description: [
         "Built the foundations for a server-driven UI architecture for a fast and flexible app.",
         "Built CI/CD pipeline for the Android app using Jenkins, Docker, Danger, Fastlane and Supply",
@@ -45,7 +45,7 @@ const portfolioData: ResumeData = {
         title: "Software Engineer 1",
         company: "Scaler by InterviewBit",
         dates: "Dec 2021 - Dec 2022",
-        logoUrl: "https://play-lh.googleusercontent.com/CUTEE0Q3qo4kiFK20N9_MmJdBtO-QZpuDhQEfMU1HneFSbmPLf7UiympkbFVITH1pZA",
+        logoUrl: "https://scaler-blog-prod-wp-content.s3.ap-south-1.amazonaws.com/wp-content/uploads/2022/02/15181709/scaler-social-card.png",
         description: [
             "Built the foundations for a server-driven UI architecture for a fast and flexible app.",
             "Built CI/CD pipeline for the Android app using Jenkins, Docker, Danger, Fastlane and Supply",
@@ -58,7 +58,7 @@ const portfolioData: ResumeData = {
       title: "Software Engineer 1",
       company: "Practo",
       dates: "Aug 2021 - Nov 2021",
-      logoUrl: "https://play-lh.googleusercontent.com/FzTCIxV68Dg3Qjl-VUtGef2NpQ_JdKhj-RXcPdEN8O5XB8TSSLqlwAWBnd7tJGUrW_Q",
+      logoUrl: "https://blog.practo.com/wp-content/uploads/2021/05/logo-practo.png",
       description: [
         "Worked on the patient side app along with the API aggregator.",
         "Built product features and fixed a few critical bugs.",
@@ -69,7 +69,7 @@ const portfolioData: ResumeData = {
         title: "Intern",
         company: "Practo",
         dates: "Feb 2021 - Jul 2021",
-        logoUrl: "https://play-lh.googleusercontent.com/FzTCIxV68Dg3Qjl-VUtGef2NpQ_JdKhj-RXcPdEN8O5XB8TSSLqlwAWBnd7tJGUrW_Q",
+        logoUrl: "https://blog.practo.com/wp-content/uploads/2021/05/logo-practo.png",
         description: [
             "Worked on the patient side app along with the API aggregator.",
             "Built product features and fixed a few critical bugs.",
@@ -82,7 +82,7 @@ const portfolioData: ResumeData = {
       institution: "University Visvesvaraya College of Engineering",
       degree: "Bachelor of Engineering in Computer Science",
       dates: "2017 - 2021",
-      logoUrl: "https://media.licdn.com/dms/image/v2/C4E03AQEtmoE5SiZTlQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1632927493448?e=2147483647&v=beta&t=NfZ_NVCrkZTghNzKWIvqbs2gZKFVGfzR7rR4ig44rAk",
+      logoUrl: "https://media.licdn.com/dms/image/C4E0BAQGg44w0w2aZ5A/company-logo_200_200/0/1630653654215?e=2147483647&v=beta&t=Wxt16k3LVJ2h2Yc-Kx_eM11p3v_Rqw-b_tWl2v__yN4",
       description: "Focused on software engineering, algorithms, and data structures. Active member of the IEEE club and Runner up in TechRoadies and Kagathon. Core member and advisor for Adhamya and Tatva - cultural clubs",
     },
   ],
@@ -211,3 +211,5 @@ const PortfolioScreen = ({ data }: { data: ResumeData }) => (
     </Section>
   </div>
 );
+
+    
