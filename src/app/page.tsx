@@ -1,7 +1,7 @@
 
 "use client";
 
-import { Github, Mail, Briefcase, GraduationCap, Lightbulb, Wrench, Linkedin, Instagram, Phone, Code, Smartphone, Layout, GitFork, Cog, Bot, Server, TerminalSquare, HardDrive } from "lucide-react";
+import { Github, Mail, Briefcase, GraduationCap, Lightbulb, Wrench, Linkedin, Instagram, Phone, Code, Smartphone, Layout, GitFork, Server, HardDrive } from "lucide-react";
 import type { ResumeData } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/section";
@@ -93,7 +93,6 @@ const portfolioData: ResumeData = {
     { name: "C++", icon: Code },
     { name: "Android", icon: Smartphone },
     { name: "Jetpack Compose", icon: Layout },
-    { name: "Android Studio", icon: TerminalSquare },
     { name: "Git", icon: GitFork },
     { name: "Jenkins", icon: Server },
     { name: "Docker", icon: HardDrive },
@@ -158,65 +157,65 @@ const Hero = () => (
   </section>
 );
 
-const PortfolioScreen = ({ data }: { data: ResumeData }) => {
-  return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-      {data.experience && data.experience.length > 0 && (
-        <Section title="Experience" icon={Briefcase}>
-          <Timeline items={data.experience.map(exp => ({ ...exp, subtitle: exp.company }))} />
-        </Section>
-      )}
-      {data.education && data.education.length > 0 && (
-        <Section title="Education" icon={GraduationCap}>
-          <Timeline items={data.education.map(edu => ({ title: edu.degree, subtitle: edu.institution, ...edu }))} />
-        </Section>
-      )}
-      {data.projects && data.projects.length > 0 && (
-        <Section title="Work" icon={Lightbulb} id="projects">
-          <ProjectShowcase projects={data.projects} />
-        </Section>
-      )}
-      {data.skills && data.skills.length > 0 && (
-        <Section title="Skills" icon={Wrench}>
-          <div className="flex flex-wrap gap-3">
-            {data.skills.map((skill) => (
-              <Badge key={skill.name} variant="secondary" className="text-base px-4 py-2 flex items-center gap-2">
-                <skill.icon className="w-4 h-4" />
-                {skill.name}
-              </Badge>
-            ))}
-          </div>
-        </Section>
-      )}
-      <Section title="Contact" icon={Mail} id="contact">
-        <div className="flex justify-center gap-4">
-          <Button asChild variant="outline" size="icon">
-            <a href="mailto:darshreddy14@gmail.com" aria-label="Email" className="transition-transform hover:scale-110 active:scale-100">
-              <Mail />
-            </a>
-          </Button>
-          <Button asChild variant="outline" size="icon">
-            <a href="tel:+917899746088" aria-label="Phone" className="transition-transform hover:scale-110 active:scale-100">
-              <Phone />
-            </a>
-          </Button>
-          <Button asChild variant="outline" size="icon">
-            <a href="https://www.github.com/darshreddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="transition-transform hover:scale-110 active:scale-100">
-              <Github />
-            </a>
-          </Button>
-          <Button asChild variant="outline" size="icon">
-            <a href="https://linkedin.com/in/darshreddy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="transition-transform hover:scale-110 active:scale-100">
-              <Linkedin />
-            </a>
-          </Button>
-          <Button asChild variant="outline" size="icon">
-            <a href="https://www.instagram.com/eddy__shan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="transition-transform hover:scale-110 active:scale-100">
-              <Instagram />
-            </a>
-          </Button>
+const PortfolioScreen = ({ data }: { data: ResumeData }) => (
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    {data.experience && data.experience.length > 0 && (
+      <Section title="Experience" icon={Briefcase}>
+        <Timeline items={data.experience.map(exp => ({ ...exp, subtitle: exp.company }))} />
+      </Section>
+    )}
+    {data.education && data.education.length > 0 && (
+      <Section title="Education" icon={GraduationCap}>
+        <Timeline items={data.education.map(edu => ({ title: edu.degree, subtitle: edu.institution, ...edu }))} />
+      </Section>
+    )}
+    {data.projects && data.projects.length > 0 && (
+      <Section title="Work" icon={Lightbulb} id="projects">
+        <ProjectShowcase projects={data.projects} />
+      </Section>
+    )}
+    {data.skills && data.skills.length > 0 && (
+      <Section title="Skills" icon={Wrench}>
+        <div className="flex flex-wrap gap-3">
+          {data.skills.map((skill) => (
+            <Badge key={skill.name} variant="secondary" className="text-base px-4 py-2 flex items-center gap-2">
+              <skill.icon className="w-4 h-4" />
+              {skill.name}
+            </Badge>
+          ))}
         </div>
-      </section>
-    </div>
-  );
-};
+      </Section>
+    )}
+    <Section title="Contact" icon={Mail} id="contact">
+      <div className="flex justify-center gap-4">
+        <Button asChild variant="outline" size="icon">
+          <a href="mailto:darshreddy14@gmail.com" aria-label="Email" className="transition-transform hover:scale-110 active:scale-100">
+            <Mail />
+          </a>
+        </Button>
+        <Button asChild variant="outline" size="icon">
+          <a href="tel:+917899746088" aria-label="Phone" className="transition-transform hover:scale-110 active:scale-100">
+            <Phone />
+          </a>
+        </Button>
+        <Button asChild variant="outline" size="icon">
+          <a href="https://www.github.com/darshreddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="transition-transform hover:scale-110 active:scale-100">
+            <Github />
+          </a>
+        </Button>
+        <Button asChild variant="outline" size="icon">
+          <a href="https://linkedin.com/in/darshreddy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="transition-transform hover:scale-110 active:scale-100">
+            <Linkedin />
+          </a>
+        </Button>
+        <Button asChild variant="outline" size="icon">
+          <a href="https://www.instagram.com/eddy__shan/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="transition-transform hover:scale-110 active:scale-100">
+            <Instagram />
+          </a>
+        </Button>
+      </div>
+    </Section>
+  </div>
+);
+
+    
