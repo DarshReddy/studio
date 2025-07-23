@@ -11,6 +11,8 @@ const nextConfig: NextConfig = {
   },
   images: {
     remotePatterns: [],
+    loader: "custom", // Change this line to "custom"
+    loaderFile: "./loader.js", // Add this line to specify the path to your custom loader
   },
 };
 
