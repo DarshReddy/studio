@@ -1,7 +1,7 @@
 
 "use client";
 
-import { Github, Mail, Briefcase, GraduationCap, Lightbulb, Wrench, Linkedin, Instagram, Phone } from "lucide-react";
+import { Github, Mail, Briefcase, GraduationCap, Lightbulb, Wrench, Linkedin, Instagram, Phone, Code, Smartphone, Layout, GitFork, Cog, Bot, Server, TerminalSquare, HardDrive } from "lucide-react";
 import type { ResumeData } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/section";
@@ -21,7 +21,7 @@ const portfolioData: ResumeData = {
       title: "Software Engineer 3",
       company: "Artium Academy",
       dates: "Aug 2024 - Present",
-      logoUrl: "/images/artium_logo.webp",
+      logoUrl: "/images/artium.png",
       description: [
         "Updated all the libraries, plugins, kotlin and gradle versions in the app. Moved from Groovy to kotlin build scripts",
         "Improved the crash-free rate to 98.8% from 91.2%",
@@ -33,7 +33,7 @@ const portfolioData: ResumeData = {
       title: "Software Engineer 2",
       company: "Scaler by InterviewBit",
       dates: "Jan 2023 - Aug 2024",
-      logoUrl: "/images/scaler_logo.webp",
+      logoUrl: "/images/scaler.png",
       description: [
         "Built the foundations for a server-driven UI architecture for a fast and flexible app.",
         "Built CI/CD pipeline for the Android app using Jenkins, Docker, Danger, Fastlane and Supply",
@@ -46,7 +46,7 @@ const portfolioData: ResumeData = {
         title: "Software Engineer 1",
         company: "Scaler by InterviewBit",
         dates: "Dec 2021 - Dec 2022",
-        logoUrl: "/images/scaler_logo.webp",
+        logoUrl: "/images/scaler.png",
         description: [
             "Built the foundations for a server-driven UI architecture for a fast and flexible app.",
             "Built CI/CD pipeline for the Android app using Jenkins, Docker, Danger, Fastlane and Supply",
@@ -59,7 +59,7 @@ const portfolioData: ResumeData = {
       title: "Software Engineer 1",
       company: "Practo",
       dates: "Aug 2021 - Nov 2021",
-      logoUrl: "/images/practo_logo.webp",
+      logoUrl: "/images/practo.png",
       description: [
         "Worked on the patient side app along with the API aggregator.",
         "Built product features and fixed a few critical bugs.",
@@ -70,7 +70,7 @@ const portfolioData: ResumeData = {
         title: "Intern",
         company: "Practo",
         dates: "Feb 2021 - Jul 2021",
-        logoUrl: "/images/practo_logo.webp",
+        logoUrl: "/images/practo.png",
         description: [
             "Worked on the patient side app along with the API aggregator.",
             "Built product features and fixed a few critical bugs.",
@@ -83,19 +83,20 @@ const portfolioData: ResumeData = {
       institution: "University Visvesvaraya College of Engineering",
       degree: "Bachelor of Engineering in Computer Science",
       dates: "2017 - 2021",
-      logoUrl: "/images/uvce_logo.webp",
+      logoUrl: "/images/uvce.png",
       description: "Focused on software engineering, algorithms, and data structures. Active member of the IEEE club and Runner up in TechRoadies and Kagathon. Core member and advisor for Adhamya and Tatva - cultural clubs",
     },
   ],
   skills: [
-    "Kotlin", 
-    "Java", 
-    "C++", 
-    "Android", 
-    "Jetpack Compose", 
-    "Android Studio", 
-    "Git", 
-    "Jenkins"
+    { name: "Kotlin", icon: Code },
+    { name: "Java", icon: Code },
+    { name: "C++", icon: Code },
+    { name: "Android", icon: Smartphone },
+    { name: "Jetpack Compose", icon: Layout },
+    { name: "Android Studio", icon: TerminalSquare },
+    { name: "Git", icon: GitFork },
+    { name: "Jenkins", icon: Server },
+    { name: "Docker", icon: HardDrive },
   ],
   projects: [
     {
@@ -179,7 +180,10 @@ const PortfolioScreen = ({ data }: { data: ResumeData }) => {
         <Section title="Skills" icon={Wrench}>
           <div className="flex flex-wrap gap-3">
             {data.skills.map((skill) => (
-              <Badge key={skill} variant="secondary" className="text-base px-4 py-2">{skill}</Badge>
+              <Badge key={skill.name} variant="secondary" className="text-base px-4 py-2 flex items-center gap-2">
+                <skill.icon className="w-4 h-4" />
+                {skill.name}
+              </Badge>
             ))}
           </div>
         </Section>
@@ -212,7 +216,7 @@ const PortfolioScreen = ({ data }: { data: ResumeData }) => {
             </a>
           </Button>
         </div>
-      </Section>
+      </section>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 
-import type { ExtractResumeDataOutput } from '@/ai/flows/extract-resume-data';
+import type { LucideIcon } from 'lucide-react';
 
 // Manually defining the types as we are not using the AI flow for now.
 export interface Experience {
@@ -24,10 +24,15 @@ export interface Project {
   link?: string;
   imageUrl?: string;
 };
+
+export interface Skill {
+  name: string;
+  icon: LucideIcon;
+}
   
 export interface ResumeData {
   experience: Experience[];
   education: Education[];
   projects: Project[];
-  skills: string[];
+  skills: Skill[];
 };
