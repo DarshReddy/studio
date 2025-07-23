@@ -1,5 +1,7 @@
 {
   "hosting": {
+    "site": "darshreddy",
+    "public": "public",
     "source": ".",
     "ignore": [
       "firebase.json",
@@ -10,4 +12,5 @@
       "region": "us-west1"
     }
   }
+  
 }
