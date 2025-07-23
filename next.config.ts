@@ -23,15 +23,11 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'yt3.googleusercontent.com',
+        hostname: '*.googleusercontent.com',
       },
       {
         protocol: 'https',
         hostname: 'scaler-blog-prod-wp-content.s3.ap-south-1.amazonaws.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'play-lh.googleusercontent.com',
       },
       {
         protocol: 'https',
